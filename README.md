@@ -1,2 +1,2 @@
 # todolistapp
-a simple todolist
+a simple todolist app usingt Django
