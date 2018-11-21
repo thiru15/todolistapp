@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>todoproject</title>
+</head>
+<center><h1>welcome to todo app </h1></center>
+<center><ul>
+  {% for todo_item in all_item %}
+  <li>{{ todo_item.content }}</li>
+  {% endfor %}
+</ul>
+<form action="/addtodo/" method="post">{% csrf_token %}
+  <input type="text" name="content">
+  <input type="submit" value ="Add to todo list">
+</form></center>
+</html>
